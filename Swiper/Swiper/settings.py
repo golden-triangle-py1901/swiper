@@ -25,7 +25,7 @@ SECRET_KEY = '6cnljfxpb80-tt9m#+^ceaue^x)0-9pyf82e$vrtg669&@2r5@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['172.16.0.11']
 
 
 # Application definition
@@ -48,6 +48,7 @@ MIDDLEWARE = [
     # 'django.contrib.auth.middleware.AuthenticationMiddleware',  # 认证
     'django.contrib.messages.middleware.MessageMiddleware',
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',  # 不要追踪cookies
+    'common.middleware.AuthMiddleware'
 ]
 
 ROOT_URLCONF = 'Swiper.urls'
